@@ -1,0 +1,37 @@
+{
+  "name": "fun-with-jade",
+  "version": "1.0.0",
+  "description": "a simple server-side MVC with jade",
+  "main": "./src/app.js",
+  "scripts": {
+    "start": "node ./src/app.js",
+    "pretest": "jshint ./src",
+    "test": "echo \"tests complete\""
+  },
+    "devDependencies": {
+    "jshint": "~2.5.6"
+  },
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "compression": "~1.1.1",
+    "cookie-parser": "~1.3.3",
+    "express": "^4.13.3",
+    "jade": "^1.11.0",
+    "mongoose": "^4.1.10",
+    "serve-favicon": "~2.1.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brfrederick/fun-with-jade.git"
+  },
+  "keywords": [
+    "jade",
+    "express"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brfrederick/fun-with-jade/issues"
+  },
+  "homepage": "https://github.com/brfrederick/fun-with-jade#readme"
+}
