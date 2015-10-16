@@ -3,10 +3,26 @@ html(lang="en")
   head
   body
     h1 Welcome to page 3
-
+    hr
     // Form to create a new Dog
+    h4 Create a new Dog
+    form(action="/createDog", method="POST")
+      | name:
+      input(type="text", name="name", value="")
+      | breed:
+      input(type="text", name="breed", value="")
+      | age:
+      input(type="number", name="age", value="")
+      input(type="submit", value="Submit")
+    br
 
     // Form to search for a dog and increase its age
+    h4 Increment a Dog by name
+    form(action="/ageDog", method="GET")
+      | name:
+      input(type="text", name="name" value="")
+      input(type="submit", value="Submit")
+
 
     a(href="/") Home
     a(href="/page1") Page 1

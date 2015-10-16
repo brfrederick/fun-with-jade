@@ -13,7 +13,7 @@ var router = require('./router.js'); //import our router.js file to handle the M
 //MONGODB address to connect to.
 //process.env.MONGOLAB_URI is the variable automatically put into your node application by Heroku is you are using mongoLab
 //otherwise fallback to localhost. The string after mongodb://localhost is the database name. It can be anything you want.
-var dbURL = process.env.MONGOLAB_URI || "mongodb://heroku_jr4d3lrg:ggrjki8eha1r8juagp58fqe8c2@ds039404.mongolab.com:39404/heroku_jr4d3lrg";
+var dbURL = process.env.MONGOLAB_URI || "mongodb://localhost/simpleMVCExample";
 
 //call mongoose's connect function and pass in the url. If there are any errors connecting, we will throw it and kill the server.
 //Once connected, the mongoose package will stay connected for every file that requires it in this project
